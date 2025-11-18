@@ -12,7 +12,7 @@ node_modules/
 # Vercel
 .vercel
 
-# Documentation files (not needed for deployment)
+# Documentation files (keep locally, not in repo)
 README.md
 DEPLOYMENT-CHECKLIST.md
 QUICK-START-GUIDE.md
