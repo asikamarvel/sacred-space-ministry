@@ -1,5 +1,19 @@
+# System files
 .DS_Store
+Thumbs.db
+
+# Dependencies
 node_modules/
+
+# Environment variables
 .env
 .env.local
+
+# Vercel
 .vercel
+
+# Documentation files (not needed for deployment)
+README.md
+DEPLOYMENT-CHECKLIST.md
+QUICK-START-GUIDE.md
+SACRED-SPACE-WEBSITE-DELIVERY.md
