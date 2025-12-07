@@ -715,6 +715,7 @@ img {
 .footer-contact a {
     color: var(--sage-pale);
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .footer-links a:hover,
