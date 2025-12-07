@@ -368,5 +368,52 @@
     </footer>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/script.js"></script>
+    <script>
+        // Handle contact form submission with AJAX
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const submitButton = form.querySelector('button[type="submit"]');
+            const formSuccess = document.getElementById('formSuccess');
+            const formError = document.getElementById('formError');
+            
+            // Hide messages
+            formSuccess.style.display = 'none';
+            formError.style.display = 'none';
+            
+            // Show loading state
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+            
+            // Submit to Formspree via AJAX
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Success
+                    formSuccess.style.display = 'block';
+                    formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    form.reset();
+                } else {
+                    // Error
+                    formError.style.display = 'block';
+                    formError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }).catch(error => {
+                // Network error
+                formError.style.display = 'block';
+                formError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }).finally(() => {
+                // Reset button
+                submitButton.disabled = false;
+                submitButton.textContent = 'Send Message';
+            });
+        });
+    </script>
 </body>
 </html>
