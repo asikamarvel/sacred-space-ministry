@@ -1323,6 +1323,11 @@ img {
     width: auto;
 }
 
+.stripe-badge {
+    height: 22px;
+    width: auto;
+}
+
 .powered-by {
     font-size: 0.9rem;
     color: var(--text-muted, #6b7280);
