@@ -15,39 +15,57 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo-container">
+                <a href="/index.html">
+                    <img src="/asset/LOGO.png" alt="Sacred Space Therapeutic Ministry Logo" class="logo">
+                </a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Julie</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="appointments.html" class="active">Book Appointment</a></li>
                 <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p class="page-subtitle">Take the first step toward healing and wholeness</p>
+        </div>
+    </section>
+
+    <!-- Appointment Introduction -->
+    <section class="appointment-intro section-padding">
+        <div class="container">
+            <div class="intro-content-centered">
+                <h2 class="section-title text-center">Begin Your Journey Today</h2>
+                <div class="title-underline center"></div>
+                <p class="large-text text-center">Welcome. We're honored that you're considering Sacred Space Therapeutic Ministry as a partner in your healing journey.</p>
+                <p class="body-text text-center">Scheduling your first appointment is simple. Choose the service that best fits your needs below, and you'll be guided to our secure scheduling system. If you're unsure which service is right for you, please <a href="contact.html">contact us</a> and we'll help you determine the best starting point.</p>
             </div>
         </div>
     </section>
 
-    <!-- Standalone Free Consultation CTA -->
-    <section class="scheduling-section section-padding">
+    <!-- Appointment Options -->
+    <section class="appointment-options section-padding bg-light">
         <div class="container">
-            <div class="scheduling-container">
-                <h2 class="section-title text-center">Schedule Your Free Consultation</h2>
-                <div class="title-underline center"></div>
-                <p class="section-description text-center">A 15-30 minute call to answer your questions and help you choose the right service.</p>
-                <div class="calendly-placeholder">
-                    <div class="scheduling-info">
-                        <h3>Free Consultation Call</h3>
-                        <p>Speak with us directly to discuss your needs, get recommendations, and see if we're the right fit.</p>
-                        <ul class="integration-steps">
-                            <li>No obligation, no cost</li>
-                            <li>Ask questions about services and availability</li>
-                            <li>Get guidance on next steps</li>
-                            <li>Book in minutes through Calendly</li>
-                        </ul>
-                        <div class="text-center mt-3">
-                            <a href="https://calendly.com/julie-mysacredspace/30min" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Book Free Consultation</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h2 class="section-title text-center">Select Your Service</h2>
+            <div class="title-underline center"></div>
+            
+            <div class="appointment-grid">
+                <div class="appointment-card">
+                    <div class="appointment-icon">🌱</div>
+                    <h3>Initial Consultation</h3>
                     <p class="appointment-duration">60-90 minutes</p>
                     <p class="appointment-description">A comprehensive first session to understand your needs, discuss your goals, and create a personalized treatment plan. Available in-person or via telehealth.</p>
                     <ul class="appointment-includes">
@@ -88,54 +106,31 @@
                     <a href="https://calendly.com/julie-mysacredspace/couples-family-session" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Schedule Couples Session</a>
                 </div>
 
-                <div class="appointment-card">
-                    <div class="appointment-icon">📞</div>
-                    <h3>Consultation Call</h3>
-                    <p class="appointment-duration">15-30 minutes</p>
-                    <p class="appointment-description">Free phone consultation to discuss your needs, answer questions about services, and determine if Sacred Space is the right fit for you.</p>
-                    <ul class="appointment-includes">
-                        <li>No obligation consultation</li>
-                        <li>Service recommendations</li>
-                        <li>Question and answer</li>
-                        <li>Scheduling assistance</li>
-                    </ul>
-                    <a href="https://calendly.com/julie-mysacredspace/30min" class="btn btn-outline" target="_blank" rel="noopener noreferrer">Schedule Free Consultation</a>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Scheduling System Integration -->
+    <!-- Free Consultation CTA -->
     <section class="scheduling-section section-padding">
         <div class="container">
             <div class="scheduling-container">
-                <h2 class="section-title text-center">Schedule Your Appointment</h2>
+                <h2 class="section-title text-center">Schedule a Free Consultation Call</h2>
                 <div class="title-underline center"></div>
-                <p class="section-description text-center">Use our secure scheduling system below to book your appointment</p>
-                
-                <!-- Placeholder for Calendly/Acuity Integration -->
+                <p class="section-description text-center">A 15-30 minute call to answer your questions and ensure we're the right fit for your needs.</p>
+
                 <div class="calendly-placeholder">
                     <div class="scheduling-info">
-                        <h3>Scheduling System</h3>
-                        <p>Our secure scheduling system will be integrated here using Calendly or Acuity Scheduling.</p>
-                        <p>To complete integration, you'll need to:</p>
-                        <ol class="integration-steps">
-                            <li>Create an account with Calendly (<a href="https://calendly.com" target="_blank" rel="noopener noreferrer">calendly.com</a>) or Acuity Scheduling</li>
-                            <li>Set up your availability and appointment types</li>
-                            <li>Copy the embed code</li>
-                            <li>Replace this placeholder section with the embed code</li>
-                        </ol>
-                        <p class="mt-3"><strong>For now, please use the contact form below or call us directly to schedule.</strong></p>
+                        <h3>What to Expect</h3>
+                        <ul class="integration-steps">
+                            <li>No obligation conversation</li>
+                            <li>Service recommendations tailored to you</li>
+                            <li>Time for your questions</li>
+                            <li>Help choosing the right service</li>
+                        </ul>
+                        <div class="text-center mt-3">
+                            <a href="https://calendly.com/julie-mysacredspace/30min" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">Schedule Free Consultation</a>
+                        </div>
                     </div>
-                    
-                    <!-- Example Calendly Embed Code (to be replaced with actual code) -->
-                    <!-- 
-                    <div class="calendly-inline-widget" 
-                         data-url="https://calendly.com/your-username/appointment-type" 
-                         style="min-width:320px;height:700px;">
-                    </div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                    -->
                 </div>
             </div>
         </div>
