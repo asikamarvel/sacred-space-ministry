@@ -471,6 +471,16 @@ img {
     margin-top: 3rem;
 }
 
+.services-overview .container {
+    max-width: 1400px;
+}
+
+@media (min-width: 1200px) {
+    .services-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .service-card {
     background-color: var(--white);
     padding: 2.5rem;
@@ -994,11 +1004,37 @@ img {
     flex-wrap: wrap;
 }
 
+.service-cta .cta-button {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    min-width: 220px;
+}
+
+.btn-subtext {
+    font-size: 0.82rem;
+    line-height: 1.4;
+    color: var(--text-medium);
+    text-align: center;
+    display: block;
+    margin-top: 0.2rem;
+}
+
 .workshops-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.5rem;
     margin-top: 3rem;
+}
+
+#workshops .container {
+    max-width: 1400px;
+}
+
+@media (min-width: 1200px) {
+    .workshops-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .workshop-card {
@@ -1081,6 +1117,16 @@ img {
     margin-top: 2rem;
 }
 
+#speaking .container {
+    max-width: 1400px;
+}
+
+@media (min-width: 1200px) {
+    .formats-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .format-card {
     background-color: var(--white);
     padding: 2rem;
@@ -1098,6 +1144,16 @@ img {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
     margin-top: 3rem;
+}
+
+#consulting .container {
+    max-width: 1400px;
+}
+
+@media (min-width: 1200px) {
+    .consulting-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .consulting-service {
@@ -1255,6 +1311,16 @@ img {
     margin-top: 3rem;
 }
 
+.new-client-info .container {
+    max-width: 1400px;
+}
+
+@media (min-width: 1200px) {
+    .info-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .info-card {
     background-color: var(--white);
     padding: 2.5rem;
@@ -1320,18 +1386,6 @@ img {
 
 .payment-icon {
     font-size: 2rem;
-}
-
-.payment-powered {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.payment-badge {
-    height: 28px;
-    width: auto;
-    display: inline-block;
 }
 
 /* FAQ Section */
